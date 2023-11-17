@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game of Life</title>
+		<style>
+			canvas {
+				border: 1px solid #000;
+			}
+		</style>
+		<script src="CalculateNextStep.js" defer></script>
+		<script src="GL.js" defer></script>
+	</head>
+	<body>
+		<main style="padding: 5px; width: 100%; height: 100%">
+			<div id="resize" style="display: flex; gap: 30px; width: 100vw">
+				<label>
+					Размер ячейки
+					<select value="5" id="scale">
+						<option name="5">5</option>
+						<option name="10">10</option>
+						<option name="15">15</option>
+					</select>
+				</label>
+				<label style="display: flex; flex-direction: column">
+					<div>
+						<span>1</span>
+						<input
+							id="resize_W"
+							min="1"
+							max="1500"
+							type="range"
+							placeholder="width"
+							value="40"
+							step="1"
+						/>
+						<span>1500</span>
+					</div>
+					<div>Кол-во столбцов: <output id="value_W">40</output></div>
+				</label>
+				<label style="display: flex; flex-direction: column">
+					<div>
+						<span>1</span>
+						<input
+							id="resize_H"
+							min="1"
+							max="1500"
+							type="range"
+							placeholder="height"
+							value="40"
+							step="1"
+						/>
+						<span>1500</span>
+					</div>
+					<div>Кол-во строк: <output id="value_H">40</output></div>
+				</label>
+			</div>
+			<div class="active">
+				<button id="start">Start/Stop</button>
+				<button id="random">Random</button>
+				<button id="reset">Reset</button>
+				<div>
+					Time of generation (miliseconds): <span id="time">0</span>
+				</div>
+			</div>
+			<canvas id="board" width="400" height="400"></canvas>
+		</main>
+	</body>
+</html>
