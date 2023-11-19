@@ -130,7 +130,10 @@ GameOfLifeObj.prototype.resizeH = function (height) {
 };
 
 GameOfLifeObj.prototype.addPoint = function (x, y) {
-	this.matrix[Math.floor(y / this.scale)][Math.floor(x / this.scale)] = 1;
+	const scaleX = Math.floor(x / this.scale);
+	const scaleY = Math.floor(y / this.scale);
+
+	this.matrix[scaleY][scaleX] = 1 - this.matrix[scaleY][scaleX];
 	this.drawMatrix();
 };
 
