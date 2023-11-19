@@ -140,6 +140,6 @@ GameOfLifeObj.prototype.addPoint = function (x, y) {
 GameOfLifeObj.prototype.printTime = function (time) {
 	if (time !== this.timeG) {
 		this.timeG = time;
-		document.getElementById("time").innerHTML = `${time.toFixed(0)}`;
+		document.getElementById("time").innerHTML = `${time.toFixed(4)}`;
 	}
 };
