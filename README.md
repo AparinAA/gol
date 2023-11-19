@@ -1,6 +1,6 @@
 # gol
 
-Game of Life
+Game of Life (описание игры [https://ru.wikipedia.org/w/index.php?title=Игра\_«Жизнь»&oldid=132904452](Wiki))
 
 Страница с игрой [https://aparinaa.github.io/gol/](https://aparinaa.github.io/gol/)
 
