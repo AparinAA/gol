@@ -2,7 +2,7 @@
 
 Game of Life
 
-Страница с игрой [https://aparinaa.github.io/gol/](https://aparinaa.github.io/gol/)
+Страница с игрой <a href="https://aparinaa.github.io/gol/" target="_blank">https://aparinaa.github.io/gol/</a>
 
 ### Описание алгоритма
 
